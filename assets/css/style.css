@@ -49,7 +49,7 @@ body{
 }
 .header .navbar .navlist{ 
   float: right;
-  padding-right: 5%;
+  padding-right: 100px;
   text-align: right; 
 }                                                                                                                                                                                                                                                                                                                                                                                                                       
 .header .navbar .navlist .listitems{
@@ -102,19 +102,24 @@ body{
 .projects .title{
     margin-bottom: 50px;
 }
-.row{
-  display: flex; 
+.projects .projectsItems{
+  overflow: hidden;
+  
+   
 }
 .projects .projectsItems .card{ 
-  flex: 30%;
+
+  float:left;
+   
   position: relative;
   text-align: center;
   color: white;
   padding: 5px;
   margin: 5px;
+  width: 23%; 
 }
 .projects .projectsItems .card .item img{
-  width: 100%;  
+   width: 100%;
 }
 .top-left{
   position: absolute;
