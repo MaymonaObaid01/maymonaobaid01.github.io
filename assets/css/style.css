@@ -10,14 +10,14 @@
   margin: 0;
   padding: 0;
 }
-ul {
+ul{
   list-style-type: none;
 }
-a {
+a{
   text-decoration: none;
 }
-body {
-    font-family: 'Rubik', sans-serif;
+body{
+  font-family: 'Rubik', sans-serif;
 }
 .container{
   width: 90%;
@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   font-family: 'Rubik', sans-serif;
 }
-.header .navbar{ 
+.navbar{ 
   height: 50px;
   margin-top: 30px; 
 }
@@ -45,15 +45,14 @@ body {
   top: 3px;
   right: 0;
   left: 0;
-  overflow: hidden; 
-  
+  overflow: hidden;   
   box-shadow: 2px 2px rgb(182, 177, 177);
 }
 .header .navbar .logo{
   float: left;  
   padding-left: 5.5%;
 }
-.header .navbar .navlist  { 
+.header .navbar .navlist{ 
   float: right;
   padding-right: 5%;
   text-align: right; 
@@ -61,11 +60,12 @@ body {
 .header .navbar .navlist .listitems{
   display: inline-block; 
 }
-.header .navbar .navlist .listitems a {
+.header .navbar .navlist .listitems a{
   color:gray;
   font-size: 15px;
   cursor: pointer;
   padding-right: 15px;
+  font-family: 'Rubik', sans-serif;
 }
 .head{
   color:gray;
@@ -79,7 +79,7 @@ body {
 .TextOverImage {
   margin-top: 13%;  
 }
-.TextOverImage .text { 
+.TextOverImage .text{ 
   color:white;
   font-size: 25px;
   letter-spacing: 5px; 
@@ -90,7 +90,8 @@ body {
     padding: 5px;
     background: rgb(68, 73, 74);
     background-clip: border-box;    
-} 
+}
+ 
 /* projects */
 .projects .title h2{
   text-align: left;
@@ -121,7 +122,7 @@ body {
 .projects .projectsItems .card .item img{
   width: 100%;  
 }
-.top-left {
+.top-left{
   position: absolute;
   top: 0px;
   left: 0px;
@@ -136,11 +137,10 @@ body {
 .About{
      padding-top: 60px;
 }
-.About-items {
+.About-items{
   display: flex;
 }
-.About .title h2
-{
+.About .title h2{
   text-align: left;
   font-family: "Arial";
   font-size: 25px;
@@ -207,7 +207,6 @@ font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: black;  
   background-color:rgb(229, 226, 226); 
-
   }
 /* contact section */
 .contact{
@@ -232,11 +231,11 @@ font-family: 'Raleway', sans-serif;
   padding: 5px;
   margin: 20px 5px 5px 5px; 
 }
-.contact .form {
+.contact .form{
   width: 100%;
   height: 250px;
 }
-.contact .form .form-inputs .information {
+.contact .form .form-inputs .information{
   width: 50%;
   float: left; 
 }
