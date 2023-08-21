@@ -32,7 +32,7 @@ body{
   height: 50px;
   margin-top: 30px; 
 }
-.header .navbar .fixed{
+.header .navbar .fixedMenu{
   width: 100%;
   position: fixed;
   padding-top: 10px; 
@@ -62,12 +62,12 @@ body{
   padding-right: 15px;
   font-family: 'Rubik', sans-serif;
 }
-.head{
+.logoName{
   color:gray;
   font-size: 26px;
   letter-spacing: 3px;
 }
-.head span {
+.logoName span {
   color: black;
   font-weight: bold;
 }
