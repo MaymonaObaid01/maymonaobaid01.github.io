@@ -17,10 +17,10 @@ body {
 }
 
 .header {
+  height: 500px;
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
   background-repeat: no-repeat;
   font-family: 'Rubik', sans-serif;
 }
@@ -30,11 +30,11 @@ body {
 }
 
 .fixedMenu {
-  position: fixed;
+  position: fixed; 
+  z-index: 1;
+  box-shadow: 2px 2px rgb(182, 177, 177);
   width: 100%;
   background-color:white;
-  z-index: 1;  
-  box-shadow: 2px 2px rgb(182, 177, 177);
 }
 
 .header .navbar .navlist { 
@@ -44,8 +44,7 @@ body {
 .logoName {
   color:gray;
   font-size: 26px;
-  letter-spacing: 3px;
-   
+  letter-spacing: 3px;  
 }
 
 .logoName .boldChar {
@@ -53,19 +52,20 @@ body {
   font-weight: bold;
 }
 
-.navlist{
-  padding-top: 7px;
+.navlist{ 
   width: 40%;
+  padding-top: 7px;
   margin-right: 30px;
   text-align: center;
 }
-.header .navbar .navlist a {
-  color:gray;
-  font-size: 16px;
-  cursor: pointer;
-  font-family: 'Rubik', sans-serif;
+
+.header .navbar .navlist a { 
   padding-right: 50px;
   margin-left: 10px;
+  color:gray;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px; 
+  cursor: pointer;
 }
 
 .TextOverImage {
@@ -81,10 +81,10 @@ body {
 
 .text span {
     border: 5px black;
-    background: rgb(68, 73, 74);
+    background-color: rgb(68, 73, 74);
     background-clip: border-box;    
 }
-
+/* this is for all titles in the page */
 .sectionTitle {
   color: #6c757d;
   font-family: "Arial";
