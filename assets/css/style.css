@@ -190,7 +190,7 @@ img {
   margin-top: 30px;
 }
 
-.contact .form .box {
+.box {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
@@ -198,6 +198,19 @@ img {
   padding: 5px;
   border: 1px solid rgb(170, 168, 168);
   margin-bottom: 20px;
+}
+.button {
+  display: none;
+  width: 25%;
+  padding: 10px 0px;
+  border: none;
+  margin:15px 0px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;   
+  background-color:black; 
+  text-transform: uppercase;
+  cursor: pointer; 
 }
 /* Media Query */
 /* Ipads */
@@ -279,6 +292,10 @@ img {
     padding-top: 4px;
     padding-bottom: 4px;
   }
+
+  .button {
+    display: block;
+  }
 }
 
 /* Phones Screen */
@@ -353,5 +370,9 @@ img {
     font-size: 8px; 
     padding-top: 3px; 
     padding-bottom: 3px;  
+  }
+
+  .button {
+    display: block;
   }
 }
