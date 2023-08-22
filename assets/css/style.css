@@ -29,7 +29,7 @@ body {
   height: 50px;
 }
 
-.header .navbar .fixedMenu {
+.fixedMenu {
   position: fixed;
   width: 100%;
   background-color:white;
@@ -89,9 +89,6 @@ body {
 .projects .title {
   padding-top: 80px; 
   margin-bottom: 50px;
-}
-
-.projects .title h2 {
   text-align: left;
   font-family: "Arial";
   font-size: 25px;
@@ -103,7 +100,7 @@ body {
   flex-wrap: wrap;
 }
 
-.projects .projectsItems .card { 
+.projects .card { 
   position: relative;
   text-align: center;
   color: white;
@@ -112,11 +109,11 @@ body {
   padding-bottom: 10px;
 }
 
-.projects .projectsItems .card .item img {
+.projects img {
    width: 100%;
 }
 
-.top-left {
+.topLeft {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -367,21 +364,18 @@ img {
   .projects .title {
     padding-top: 40px;  
     margin-bottom: 20px;  
+    font-size: 25px;  
   }
 
-  .projects .title h2 {
-    font-size: 20px;  
-  }
-
-  .projects .projectsItems .card {
+  .projects .card {
     width: 100%;  
     margin: 7px 0;  
-    padding: 5px; 
+    padding: 7px; 
   }
 
-  .top-left {
-    padding: 5px 10px;  
-    margin: 5px;
+  .topLeft {
+    padding: 7px 25px;  
+    margin: 7px;
     font-size: 16px; 
   }
 
