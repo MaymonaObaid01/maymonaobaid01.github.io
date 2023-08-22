@@ -124,100 +124,79 @@ body {
   padding: 10px 13px 5px 13px ;  
   font-size: 20px;
 }
-
 /* end projects section */
 /* About section section*/
 .About {
      padding-top: 60px;
 }
 
-.About-items {
+.AboutItems {
   display: flex;
   flex-wrap: wrap;
 }
 
-.About .title h2 {
-  text-align: left;
+.sectionTitle {
+  color: #6c757d;
   font-family: "Arial";
   font-size: 25px;
-  color: #6c757d;
+  text-align: left;
 }
 
-.About .title p {
-  text-align: left;
-  font-family: "Arial";
-  line-height: 1.6;
-  font-size: 17px;
-  color:black;
- 
+.titleDescription {  
   margin: 20px 5px 30px 5px;
+  color:black;
+  font-family: "Arial";
+  font-size: 15px; 
+  line-height: 1.6;
+  text-align: left; 
 }
 
 .About .card {
   width: 22%;
-  text-align: left;
   padding-right:20px ;
   padding-bottom: 10px;
-}
-
-.About .card .item { 
-  overflow: hidden;
-  width: 100%;  
-}
-
-.About .card .item img {
-  width: 100%;
-}
-
-.About .card .descr {
-   width: 95%;
-   position: relative;   
-}
-
-.descr {
-  margin-top: 15px;
-  margin-bottom: 35px
-}
-
-.descr h3 {
-font-family: 'Raleway', sans-serif;
-}
-
-.descr h4 {
-  color: gray;
   font-family: 'Raleway', sans-serif;
-  margin-top: 15px;
+  text-align: left;
 }
 
-.descr p {
-  margin-top: 15px;
-  font-size: 10px;
-  color: black;
-  overflow: hidden;
-}
-
-.descr .btn {
-  position: absolute;
-  border: 1;
-  text-align: center;
-  border-radius: 1px;
-  cursor: pointer; 
+img {
   width: 100%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.position {
   margin-top: 15px;
+  color: gray;
+}
+
+.description {
+  margin-top: 15px;
+  color: black;
+  font-size: 12px;
+}
+
+.btn {
+  width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
-  font-family: "Montserrat";
+  border: none;
+  margin-top: 15px;
+  color: rgb(71, 69, 69);
   font-size: 12px;
-  font-weight: 600;
-  color: black;  
-  background-color:rgb(229, 226, 226); 
+  font-weight: 600;   
+  background-color:rgb(241, 238, 238); 
+  cursor: pointer; 
 }
 
 /* contact section */ 
 .contact .title {
   text-align: left;
   margin-top: 80px;
-   font-family: "Arial";
+  font-family: "Arial";
   font-size: 25px;
   color: #6c757d;
 }
@@ -308,12 +287,12 @@ font-family: 'Raleway', sans-serif;
     padding-top: 40px;
   }
 
-  .About .title h2 {
+  .sectionTitle {
     font-size: 22px;
   }
 
-  .About .title p {
-    font-size: 15px;
+  .titleDescription {
+    font-size: 14px;
     margin: 15px 5px 25px 5px;
   }
 
@@ -323,19 +302,19 @@ font-family: 'Raleway', sans-serif;
     padding-bottom: 5px;
   }
 
-  .descr h3 {
+  .name {
     font-size: 18px;
   }
 
-  .descr h4 {
+  .position {
     font-size: 14px;
   }
 
-  .descr p {
-    font-size: 8px;
+  .description {
+    font-size: 10px;
   }
 
-  .descr .btn {
+  .btn {
     font-size: 10px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -369,8 +348,8 @@ font-family: 'Raleway', sans-serif;
 /* Phones Screen */
 @media (max-width: 576px) {
   .container {
-    margin-left: 10px;  
-    margin-right: 10px;  
+    margin-left: 20px;  
+    margin-right: 20px;  
   }
 
   .header .navbar .navlist { 
@@ -396,7 +375,7 @@ font-family: 'Raleway', sans-serif;
 
   .projects .projectsItems .card {
     width: 100%;  
-    margin: 5px 0;  
+    margin: 7px 0;  
     padding: 5px; 
   }
 
@@ -411,12 +390,12 @@ font-family: 'Raleway', sans-serif;
     padding-top: 30px; 
   }
 
-  .About .title h2 {
+  .sectionTitle {
     font-size: 20px; 
   }
 
-  .About .title p {
-    font-size: 14px;  
+  .titleDescription {
+    font-size: 12px;  
     margin: 10px 0;  
   }
 
@@ -425,24 +404,23 @@ font-family: 'Raleway', sans-serif;
     padding: 5px;  
   }
 
-  .descr h3 {
+  .name {
     font-size: 16px; 
   }
 
-  .descr h4 {
+  .position {
     font-size: 12px;  
   }
 
-  .descr p {
-    font-size: 6px; 
+  .description {
+    font-size: 11px; 
   }
 
-  .descr .btn {
+ .btn {
     font-size: 8px; 
     padding-top: 3px; 
     padding-bottom: 3px;  
   }
-
   /* contact section */
   .contact .title {
     margin-top: 40px;  
