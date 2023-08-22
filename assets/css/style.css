@@ -12,8 +12,7 @@ body {
 }
 
 .container {
-  margin-left: 70px;
-  margin-right: 20px; 
+  margin-left: 40px;
 }
 
 .header {
@@ -25,19 +24,17 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.navbar { 
-  height: 50px;
-}
-
 .fixedMenu {
   position: fixed; 
+  top: 0;
+  right: 0;
   z-index: 1;
   box-shadow: 2px 2px rgb(182, 177, 177);
   width: 100%;
   background-color:white;
 }
 
-.header .navbar .navlist { 
+.header .navlist { 
   float: right;
 }
 
@@ -55,11 +52,11 @@ body {
 .navlist{ 
   width: 40%;
   padding-top: 7px;
-  margin-right: 30px;
+  margin-right: 15px;
   text-align: center;
 }
 
-.header .navbar .navlist a { 
+.header a { 
   padding-right: 50px;
   margin-left: 10px;
   color:gray;
@@ -69,20 +66,25 @@ body {
 }
 
 .TextOverImage {
-  margin-top: 190px;  
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 .TextOverImage .text { 
   color:white;
   font-size: 25px;
   letter-spacing: 5px; 
+  font-weight: bold;
   text-align: center;
 }
 
 .text span {
-    border: 5px black;
-    background-color: rgb(68, 73, 74);
-    background-clip: border-box;    
+  padding: 5px;
+  background-color: rgb(68, 73, 74, 0.4);
+  background-clip: border-box;    
 }
 /* this is for all titles in the page */
 .sectionTitle {
@@ -220,13 +222,18 @@ img {
     margin-right: 20px;
   }
 
-  .header .navbar .navlist { 
-    margin-right: 10px;  
+  .header .navlist { 
+    margin-right: 20px;  
   }
 
-  .header .navbar .navlist a {
-    font-size: 12px;
-    padding-right: 20px;
+  .header .navlist a {
+    font-size: 15px;
+    padding-right: 30px;
+  }
+
+  .navlist { 
+    width: 60%;
+    text-align: right;
   }
 
   .logoName {
@@ -234,8 +241,11 @@ img {
     letter-spacing: 1px;
   }
 
-  .text span {
-    border: 3px solid black;  
+  .TextOverImage {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   /* projects */
@@ -305,17 +315,15 @@ img {
     margin-right: 20px;  
   }
 
-  .header .navbar .navlist { 
+  .header .navlist { 
     display: none;
   }
   .TextOverImage .text {
     font-size: 18px;  
   }
-
-  .text span {
-    border: 2px solid black; 
+  .TextOverImage {
+    top: 65%;
   }
-
   /* projects */
   .projects .title {
     padding-top: 40px;  
