@@ -64,16 +64,16 @@ a {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:white;
+  color:rgba(255, 255, 255, 0.8);
   font-size: 25px;
   letter-spacing: 5px; 
   font-weight: bold;
   text-align: center;
 }
 
-.TextOverImage .shadedWord {
+.shadedWord {
   padding: 5px;
-  background-color: rgb(68, 73, 74, 0.4);
+  background-color: rgba(47, 50, 50, 0.5);
   background-clip: border-box;    
 }
 
@@ -301,12 +301,16 @@ img {
     display: none;
   }
 
-  .TextOverImage .text {
-    font-size: 18px;  
+  .Architects {
+    display: none;
+  }
+  .TextOverImage {
+    font-size: 40px;  
+    top: 35%;
   }
 
-  .TextOverImage {
-    top: 40%;
+  .shadedWord{
+    padding: 20px;
   }
 
   /* projects */
