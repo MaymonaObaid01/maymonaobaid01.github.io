@@ -1,0 +1,21 @@
+// sass code here
+// colors theme 
+$primary: rgb(182, 177, 177);
+$secondary: rgb(31, 31, 31);
+
+//margins
+$base-Margin: 20px;
+
+.container {
+    margin: $base-Margin;
+}
+
+.sectionTitle {
+    color: $primary;
+}
+
+.titleDescription { 
+    color: $secondary;
+}
+
+
