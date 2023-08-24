@@ -158,39 +158,39 @@ body {
         width: $cards-width;
         padding: $cards-padding;
         font-family: $title-font;
+    }
+    img {
+        width: $full-width;
+    }
 
-        img {
-            width: $full-width;
-        }
+    .name {
+        font-size: $title-font-size * 0.7;
+        font-weight: $bold;
+    }
 
-        .name {
-            font-size: $title-font-size * 0.7;
-            font-weight: $bold;
-        }
+    .career {
+        margin-top: $title-font-size * 0.5;
+        color: $primary;
+    }
 
-        .career {
-            margin-top: $title-font-size * 0.5;
-            color: $primary;
-        }
+    .description {
+        margin-top: 15px;
+        color: $secondary;
+        font-size: $title-font-size * 0.5;
+    }
 
-        .description {
-            margin-top: 15px;
-            color: $secondary;
-            font-size: $title-font-size * 0.5;
-        }
-
-        .AboutBtn {
-            width: $full-width;
-            padding: $buttons-padding;
-            border: none;
-            color: $secondary;
-            font-size: $title-font-size * 0.5;
-            font-weight: $bold;
-            background-color: $contact-button-bg;
-            cursor: $pointer;
-        }
+    .AboutBtn {
+        width: $full-width;
+        padding: $buttons-padding;
+        border: none;
+        color: $secondary;
+        font-size: $title-font-size * 0.5;
+        font-weight: $bold;
+        background-color: $contact-button-bg;
+        cursor: $pointer;
     }
 }
+
 
 // contact section
 .contact {
