@@ -1,21 +1,88 @@
 // sass code here
+
+// @import 'variables'
 // colors theme 
-$primary: rgb(182, 177, 177);
-$secondary: rgb(31, 31, 31);
+$primary: #6c757d;
+$secondary: black;
 
-//margins
-$base-Margin: 20px;
+// width
+$img-width:100%;
+$cards-width: 22%;
 
-.container {
+// margins and paddings
+$base-Margin: 40px;
+$top-margin: 70px;
+$cards-padding: 0px 20px 10px 0px;
+
+// font
+$primary-font: 'Rubik', sans-serif;
+$secondary-font: 'Arial', sans-serif;
+$primary-font-size: 25px;
+$secondary-font-size: 15px;
+
+//header
+.headere {
     margin: $base-Margin;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: $primary-font;
+
+    .fixedMeny{
+        position: fixed; 
+        top: 0;
+        right: 0;
+        z-index: 1;
+        box-shadow: 2px 2px rgb(182, 177, 177);
+        width: 100%;
+        background-color:white;
+    }
 }
 
+//  main titles 
 .sectionTitle {
     color: $primary;
+    font-family: $primary-font;
+    font-size: $primary-font-size;
+
 }
 
 .titleDescription { 
     color: $secondary;
+    font-family: $secondary-font;
+    font-size: $secondary-font-size;
+    line-height: 1.6;
 }
 
+// project section
+.project {
+    margin-left: $base-Margin;
+    margin-top: $top-margin;
 
+    .projectsItems {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        position: relative;
+        width: $cards-width; 
+        padding: $cards-padding;
+        color: white;
+    }
+
+    img {
+        width: $img-width;
+    }
+
+    .CardNames {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 10px 13px 5px 13px; 
+        margin: 0; 
+        background-color:black;
+        font-size: 20px;
+      }
+}

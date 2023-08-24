@@ -1,11 +1,57 @@
-.container {
-  margin: 20px;
+.headere {
+  margin: 40px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Rubik", sans-serif;
+}
+.headere .fixedMeny {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 2px 2px rgb(182, 177, 177);
+  width: 100%;
+  background-color: white;
 }
 
 .sectionTitle {
-  color: rgb(182, 177, 177);
+  color: #6c757d;
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
 }
 
 .titleDescription {
-  color: rgb(31, 31, 31);
+  color: black;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.project {
+  margin-left: 40px;
+  margin-top: 70px;
+}
+.project .projectsItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project .card {
+  position: relative;
+  width: 22%;
+  padding: 0px 20px 10px 0px;
+  color: white;
+}
+.project img {
+  width: 100%;
+}
+.project .CardNames {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10px 13px 5px 13px;
+  margin: 0;
+  background-color: black;
+  font-size: 20px;
 }/*# sourceMappingURL=index.css.map */
