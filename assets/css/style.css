@@ -30,10 +30,6 @@ a {
   background-color:white;
 }
 
-.header .navlist { 
-  float: right;
-}
-
 .logoName {
   color:gray;
   font-size: 26px;
@@ -46,6 +42,7 @@ a {
 }
 
 .navlist { 
+  float: right;
   padding-top: 7px;
   margin-right: 15px;
   text-align: center;
@@ -113,7 +110,7 @@ a {
   width: 100%;
 }
 
-.CardNames {
+.TopLeftCards {
   position: absolute;
   top: 0px;
   left: 0px;

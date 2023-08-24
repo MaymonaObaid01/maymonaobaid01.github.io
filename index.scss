@@ -1,88 +1,221 @@
 // sass code here
-
 // @import 'variables'
+
+// dispaly 
+$cards-display: flex;
+$display-type: wrap;
+
 // colors theme 
 $primary: #6c757d;
 $secondary: black;
+$boxes-color: white;
+$contact-button-bg: rgb(241, 238, 238);
 
 // width
-$img-width:100%;
+$full-width:100%;
 $cards-width: 22%;
-
+$header-hight: 500px;
 // margins and paddings
-$base-Margin: 40px;
-$top-margin: 70px;
+$main-padding: 50px;
 $cards-padding: 0px 20px 10px 0px;
+$buttons-padding: 10px 0;
 
 // font
-$primary-font: 'Rubik', sans-serif;
-$secondary-font: 'Arial', sans-serif;
-$primary-font-size: 25px;
-$secondary-font-size: 15px;
+$title-font: 'Rubik', sans-serif;
+$title-description-font: 'Arial', sans-serif;
+$title-font-size: 25px;
+$title-description-font-size: 15px;
+$bold: 600;
+$spacing: 4px;
+// cursor
+$pointer: pointer;
 
+body {
+    margin: 0;
+}
 //header
-.headere {
-    margin: $base-Margin;
-    background-image: url("../img/background.jpg");
+.header {
+    height: $header-hight;
+    background-image: url("assets/img/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: $primary-font;
+    font-family: $title-font;
 
-    .fixedMeny{
+    .fixedMenu {
         position: fixed; 
         top: 0;
         right: 0;
         z-index: 1;
-        box-shadow: 2px 2px rgb(182, 177, 177);
+        box-shadow: 2px 2px $primary;
         width: 100%;
-        background-color:white;
+        background-color:$boxes-color;
+    }
+    
+    .navlist { 
+        float: right;
+        padding-top: 7px;
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .logoName {
+        padding: $main-padding;
+        color: $primary;
+        font-size: $title-font-size;
+        letter-spacing: $spacing;  
+    }
+
+    .boldChar {
+        color: $secondary;
+        font-weight: $bold;
+    }
+
+    a { 
+        padding-right: 50px;
+        color:$secondary;
+        font-family: $title-font;
+        font-size: $title-font-size * 0.5; 
+        text-decoration: none;
+        cursor: $pointer;
+    }
+
+    .TextOverImage {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:rgba(255, 255, 255, 0.8);
+        font-size: $title-font-size;
+        letter-spacing: $spacing; 
+        font-weight: $bold;
+        text-align: center;
+    }
+    .shadedWord {
+        padding: 5px;
+        background-color: rgba(47, 50, 50, 0.5);
+        background-clip: border-box;    
     }
 }
 
 //  main titles 
 .sectionTitle {
     color: $primary;
-    font-family: $primary-font;
-    font-size: $primary-font-size;
+    font-family: $title-font;
+    font-size: $title-font-size;
 
 }
 
 .titleDescription { 
     color: $secondary;
-    font-family: $secondary-font;
-    font-size: $secondary-font-size;
+    font-family: $title-description-font;
+    font-size: $title-description-font-size;
     line-height: 1.6;
 }
 
 // project section
-.project {
-    margin-left: $base-Margin;
-    margin-top: $top-margin;
-
+.projects {
+    padding: $main-padding;
+   
     .projectsItems {
-        display: flex;
-        flex-wrap: wrap;
+        display: $cards-display;
+        flex-wrap: $display-type;
     }
 
     .card {
         position: relative;
         width: $cards-width; 
         padding: $cards-padding;
-        color: white;
+        
     }
 
     img {
-        width: $img-width;
+        width: $full-width;
     }
 
-    .CardNames {
+    .TopLeftCards {
         position: absolute;
         top: 0px;
         left: 0px;
         padding: 10px 13px 5px 13px; 
         margin: 0; 
-        background-color:black;
-        font-size: 20px;
-      }
+        color: $boxes-color;
+        background-color:$secondary;
+        font-size: $title-font-size * 0.7;
+    }
+}
+
+// About Section
+.About {
+    padding: $main-padding;
+
+    .AboutItems {
+        display: $cards-display;
+        flex-wrap: $display-type;
+    }
+
+    .card {
+        width: $cards-width;
+        padding: $cards-padding;
+        font-family: $title-font;
+
+        img {
+            width: $full-width;
+        }
+
+        .name {
+            font-size: $title-font-size * 0.7;
+            font-weight: $bold;
+        }
+
+        .career {
+            margin-top: $title-font-size * 0.5;
+            color: $primary;
+        }
+
+        .description {
+            margin-top: 15px;
+            color: $secondary;
+            font-size: $title-font-size * 0.5;
+        }
+
+        .AboutBtn {
+            width: $full-width;
+            padding: $buttons-padding;
+            border: none;
+            color: $secondary;
+            font-size: $title-font-size * 0.5;
+            font-weight: $bold;
+            background-color: $contact-button-bg;
+            cursor: $pointer;
+        }
+    }
+}
+
+// contact section
+.contact {
+    padding: $main-padding;    
+
+    .box {
+        display: inline-block;
+        box-sizing: border-box;
+        width: $full-width;
+        height: 30px;
+        padding: 5px;
+        border: 1px solid rgb(170, 168, 168);
+        margin-bottom: 20px;
+    }
+    .SendButton {
+        width: $cards-width;
+        padding: $buttons-padding;
+        border: none;
+        margin: 15px 0px;
+        color: $boxes-color;
+        font-size: $title-font-size * 0.5;
+        font-weight: $bold;   
+        background-color:$secondary; 
+        text-transform: uppercase;
+        cursor: $pointer; 
+    }
+
 }
