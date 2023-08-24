@@ -1,22 +1,17 @@
 // sass code here
-// @import 'variables'
-
-// dispaly 
-$cards-display: flex;
-$display-type: wrap;
 
 // colors theme 
-$primary: #6c757d;
-$secondary: black;
-$boxes-color: white;
-$contact-button-bg: rgb(241, 238, 238);
+$title-color: #6c757d;
+$paragraphs-color: rgb(22, 21, 21);
+$boxes-color: rgb(247, 241, 241);
+$contact-button-bg: rgb(230, 223, 223);
 
 // width
 $full-width:100%;
 $cards-width: 22%;
-$header-hight: 500px;
+
 // margins and paddings
-$main-padding: 50px;
+$divs-padding: 50px;
 $cards-padding: 0px 20px 10px 0px;
 $buttons-padding: 10px 0;
 
@@ -24,18 +19,14 @@ $buttons-padding: 10px 0;
 $title-font: 'Rubik', sans-serif;
 $title-description-font: 'Arial', sans-serif;
 $title-font-size: 25px;
-$title-description-font-size: 15px;
-$bold: 600;
-$spacing: 4px;
-// cursor
-$pointer: pointer;
 
 body {
     margin: 0;
 }
+
 //header
 .header {
-    height: $header-hight;
+    height: 500px;
     background-image: url("assets/img/background.jpg");
     background-size: cover;
     background-position: center;
@@ -47,38 +38,38 @@ body {
         top: 0;
         right: 0;
         z-index: 1;
-        box-shadow: 2px 2px $primary;
+        box-shadow: 2px 2px $title-color;
         width: 100%;
-        background-color:$boxes-color;
-    }
-    
-    .navlist { 
-        float: right;
-        padding-top: 7px;
-        margin-right: 15px;
-        text-align: center;
-    }
+        background-color: $boxes-color;
+        
+        .logoName {
+            padding: $divs-padding;
+            color: $title-color;
+            font-size: 25px;
+            letter-spacing: 4px; 
+            
+            .boldChar {
+                color: $paragraphs-color;
+                font-weight: bold;
+            } 
+        }
+        
+        .navlist { 
+            float: right;
+            padding-top: 7px;
+            margin-right: 15px;
+            text-align: center;
 
-    .logoName {
-        padding: $main-padding;
-        color: $primary;
-        font-size: $title-font-size;
-        letter-spacing: $spacing;  
-    }
-
-    .boldChar {
-        color: $secondary;
-        font-weight: $bold;
-    }
-
-    a { 
-        padding-right: 50px;
-        color:$secondary;
-        font-family: $title-font;
-        font-size: $title-font-size * 0.5; 
-        text-decoration: none;
-        cursor: $pointer;
-    }
+            a { 
+                padding-right: 50px;
+                color: $paragraphs-color;
+                font-family: 22px;
+                font-size: 13; 
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }    
 
     .TextOverImage {
         position: absolute;
@@ -87,114 +78,113 @@ body {
         transform: translate(-50%, -50%);
         color:rgba(255, 255, 255, 0.8);
         font-size: $title-font-size;
-        letter-spacing: $spacing; 
-        font-weight: $bold;
+        letter-spacing: 5px; 
+        font-weight: bold;
         text-align: center;
-    }
-    .shadedWord {
-        padding: 5px;
-        background-color: rgba(47, 50, 50, 0.5);
-        background-clip: border-box;    
+
+        .shadedWord {
+            padding: 5px;
+            background-color: rgba(47, 50, 50, 0.5);
+            background-clip: border-box;    
+        }
     }
 }
 
 //  main titles 
 .sectionTitle {
-    color: $primary;
+    color: $title-color;
     font-family: $title-font;
-    font-size: $title-font-size;
-
+    font-size: 25px;
 }
 
 .titleDescription { 
-    color: $secondary;
+    color: $paragraphs-color;
     font-family: $title-description-font;
-    font-size: $title-description-font-size;
+    font-size: 15px;
     line-height: 1.6;
 }
 
 // project section
 .projects {
-    padding: $main-padding;
+    padding: $divs-padding;
    
     .projectsItems {
-        display: $cards-display;
-        flex-wrap: $display-type;
-    }
+        display: flex;
+        flex-wrap: wrap;
 
-    .card {
-        position: relative;
-        width: $cards-width; 
-        padding: $cards-padding;
-        
-    }
+        .card {
+            position: relative;
+            width: $cards-width; 
+            padding: $cards-padding;
+            
+            img {
+                width: $full-width;    
+            }
 
-    img {
-        width: $full-width;
-    }
-
-    .TopLeftCards {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        padding: 10px 13px 5px 13px; 
-        margin: 0; 
-        color: $boxes-color;
-        background-color:$secondary;
-        font-size: $title-font-size * 0.7;
+            .TopLeftCards {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                padding: 10px 13px 5px 13px; 
+                margin: 0; 
+                color: $boxes-color;
+                background-color: $paragraphs-color;
+                font-size: 20px;
+            }
+        }
     }
 }
 
 // About Section
 .About {
-    padding: $main-padding;
+    padding: $divs-padding;
 
     .AboutItems {
-        display: $cards-display;
-        flex-wrap: $display-type;
-    }
+        display: flex;
+        flex-wrap: wrap;
 
-    .card {
-        width: $cards-width;
-        padding: $cards-padding;
-        font-family: $title-font;
-    }
-    img {
-        width: $full-width;
-    }
+        .card {
+            width: $cards-width;
+            padding: $cards-padding;
+            font-family: $title-font;
 
-    .name {
-        font-size: $title-font-size * 0.7;
-        font-weight: $bold;
-    }
+            img {
+                width: $full-width;
+            }
 
-    .career {
-        margin-top: $title-font-size * 0.5;
-        color: $primary;
-    }
+            .name {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        
+            .career {
+                margin-top: 15px;
+                color: $title-color;
+            }
+        
+            .description {
+                margin-top: 15px;
+                color: $paragraphs-color;
+                font-size: 12px;
+            }
 
-    .description {
-        margin-top: 15px;
-        color: $secondary;
-        font-size: $title-font-size * 0.5;
-    }
-
-    .AboutBtn {
-        width: $full-width;
-        padding: $buttons-padding;
-        border: none;
-        color: $secondary;
-        font-size: $title-font-size * 0.5;
-        font-weight: $bold;
-        background-color: $contact-button-bg;
-        cursor: $pointer;
-    }
+            .AboutBtn {
+                width: $full-width;
+                padding: $buttons-padding;
+                border: none;
+                color: $paragraphs-color;
+                font-size: 12px;
+                font-weight: 600;
+                background-color: $contact-button-bg;
+                cursor: pointer;
+            }
+        }
+    } 
 }
-
 
 // contact section
 .contact {
-    padding: $main-padding;    
+    padding: $divs-padding;    
 
     .box {
         display: inline-block;
@@ -211,11 +201,11 @@ body {
         border: none;
         margin: 15px 0px;
         color: $boxes-color;
-        font-size: $title-font-size * 0.5;
-        font-weight: $bold;   
-        background-color:$secondary; 
+        font-size: 12px;
+        font-weight: bold;   
+        background-color:$paragraphs-color; 
         text-transform: uppercase;
-        cursor: $pointer; 
+        cursor: pointer; 
     }
 
 }
