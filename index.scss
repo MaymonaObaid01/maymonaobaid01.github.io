@@ -1,4 +1,5 @@
-// sass code here
+// // media querie file
+
 
 // colors theme 
 $title-color: #6c757d;
@@ -22,6 +23,7 @@ $title-font-size: 25px;
 
 body {
     margin: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 //header
@@ -195,6 +197,7 @@ body {
         border: 1px solid rgb(170, 168, 168);
         margin-bottom: 20px;
     }
+     
     .SendButton {
         width: $cards-width;
         padding: $buttons-padding;
@@ -209,3 +212,5 @@ body {
     }
 
 }
+// for media query
+@import '_mediaQuery'; 

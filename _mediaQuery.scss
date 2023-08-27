@@ -1,0 +1,143 @@
+$breakpoints: (
+  "sm": 576px,
+  "md": 900px,
+);
+ 
+@mixin sm {
+  @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media ( (max-width: map-get($breakpoints, "md")) and (min-width: map-get($breakpoints, "sm"))) {
+    @content;
+  }
+}
+ 
+.container {
+  @include md {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @include sm {
+    margin-left: 15px;  
+    margin-right: 15px;  
+  }
+}
+
+.navlist { 
+  @include md {
+    margin-right: 20px;   
+    width: 60%;
+    text-align: right;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+a {
+  @include md {
+    font-size: 15px;
+    padding-right: 3px;
+  }
+}
+
+.logoName {
+  @include md {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+.TextOverImage {
+  @include md {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @include sm {
+    font-size: 40px;  
+    top: 35%;
+  }
+}
+
+.Architects {
+  @include sm {
+    display: none;
+  }
+}
+
+.shadedWord {
+  @include sm {
+    padding: 20px;
+  }
+}
+
+.sectionTitle {
+  @include md {
+    padding-top: 60px;
+    margin-bottom: 30px; 
+    font-size: 22px;
+    color: red;
+  }
+  @include sm {
+    color: blue;
+  }
+}
+
+.titleDescription {
+  @include md {
+    font-size: 14px;
+    margin: 15px 5px 25px 5px;
+  }
+}
+
+// project section
+.card {
+  @include md {
+    width: 45%;  
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+.TopLeftCards {
+  @include md {
+    padding: 5px 8px;  
+    font-size: 18px;
+  }
+}
+
+// About section
+// .About {
+//   @include md {
+//     padding-top: 40px;
+//   }
+
+//   .name {
+//     font-size: 18px;
+//   }
+
+//   .career {
+//     @include md {
+//       font-size: 14px;
+//     }
+//   }
+
+//   .description {
+//     @include md {
+//       font-size: 10px;
+//     }
+//   }
+
+//   .AboutBtn {
+//     @include md {
+//       font-size: 13px;
+//       padding-top: 10px;
+//       padding-bottom: 10px;
+//     }
+//   }
+// }
