@@ -1,25 +1,19 @@
-// // media querie file
-
-
+//Variables
 // colors theme 
 $title-color: #6c757d;
 $paragraphs-color: rgb(22, 21, 21);
-$boxes-color: rgb(247, 241, 241);
-$contact-button-bg: rgb(230, 223, 223);
 
 // width
 $full-width:100%;
 $cards-width: 22%;
 
 // margins and paddings
-$divs-padding: 50px;
 $cards-padding: 0px 20px 10px 0px;
 $buttons-padding: 10px 0;
 
 // font
 $title-font: 'Rubik', sans-serif;
 $title-description-font: 'Arial', sans-serif;
-$title-font-size: 25px;
 
 body {
     margin: 0;
@@ -41,11 +35,11 @@ body {
         right: 0;
         z-index: 1;
         box-shadow: 2px 2px $title-color;
-        width: 100%;
-        background-color: $boxes-color;
+        width: $full-width;
+        background-color: white;
         
         .logoName {
-            padding: $divs-padding;
+            padding: 40px;
             color: $title-color;
             font-size: 25px;
             letter-spacing: 4px; 
@@ -79,7 +73,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         color:rgba(255, 255, 255, 0.8);
-        font-size: $title-font-size;
+        font-size: 25px;
         letter-spacing: 5px; 
         font-weight: bold;
         text-align: center;
@@ -108,7 +102,7 @@ body {
 
 // project section
 .projects {
-    padding: $divs-padding;
+    padding: 40px;
    
     .projectsItems {
         display: flex;
@@ -118,7 +112,7 @@ body {
             position: relative;
             width: $cards-width; 
             padding: $cards-padding;
-            
+
             img {
                 width: $full-width;    
             }
@@ -129,7 +123,7 @@ body {
                 left: 0px;
                 padding: 10px 13px 5px 13px; 
                 margin: 0; 
-                color: $boxes-color;
+                color: white;
                 background-color: $paragraphs-color;
                 font-size: 20px;
             }
@@ -139,7 +133,7 @@ body {
 
 // About Section
 .About {
-    padding: $divs-padding;
+    padding: 40px;
 
     .AboutItems {
         display: flex;
@@ -177,7 +171,7 @@ body {
                 color: $paragraphs-color;
                 font-size: 12px;
                 font-weight: 600;
-                background-color: $contact-button-bg;
+                background-color: rgb(230, 223, 223);
                 cursor: pointer;
             }
         }
@@ -186,7 +180,7 @@ body {
 
 // contact section
 .contact {
-    padding: $divs-padding;    
+    padding: 40px;    
 
     .box {
         display: inline-block;
@@ -203,7 +197,7 @@ body {
         padding: $buttons-padding;
         border: none;
         margin: 15px 0px;
-        color: $boxes-color;
+        color: white;
         font-size: 12px;
         font-weight: bold;   
         background-color:$paragraphs-color; 
@@ -212,5 +206,171 @@ body {
     }
 
 }
-// for media query
-@import '_mediaQuery'; 
+
+//media query for ipads 
+@media (min-width: 576px) and (max-width: 900px){
+    .header {
+        .fixedMenu {
+            .navlist { 
+                margin-right: 20px;   
+                text-align: right;
+               
+                a {
+                    font-size: 15px;
+                    padding-right: 30px;
+                }
+            }
+
+            .logoName {
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .TextOverImage {
+            position: absolute;
+            top: 40%;
+        }
+    }
+        
+    .sectionTitle {
+        padding-top: 60px;
+        margin-bottom: 30px; 
+        font-size: 22px;
+    }
+
+    .titleDescription {
+        font-size: 14px;
+        margin: 15px 5px 25px 5px;
+    }
+
+    .projects {
+        .projectsItems {
+            .card { 
+                width: 46%;  
+                padding-right: 10px;
+                padding-bottom: 5px;
+                
+                .TopLeftCards {
+                    padding: 5px 8px;  
+                    font-size: 18px;
+                }
+            }   
+        }
+    }
+
+    .About {
+        padding-top: 40px;
+
+        .AboutItems {
+            .card {
+                width: 47%;  
+                padding-right: 10px;
+                padding-bottom: 5px;
+            
+                .name {
+                    font-size: 18px;
+                }
+
+                .career {
+                    font-size: 14px;
+                }
+
+                .description {
+                    font-size: 10px;
+                }
+                
+                .AboutBtn {
+                    font-size: 13px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                }
+            }
+        } 
+    }
+}
+
+//phones screen 
+@media (max-width: 576px) {
+    .header {
+        .fixedMenu {
+            .navlist { 
+                display: none;
+            }
+        }
+
+        .Architects {
+            display: none;
+        }
+
+        .TextOverImage {
+            font-size: 40px;  
+            top: 35%;
+
+            .shadedWord {
+                padding: 20px;
+            }
+        }        
+    }
+
+    .projects {
+        .projectsItems {
+            .card { 
+                width: $full-width;
+                padding: 7px;   
+                margin: 7px 0;  
+        
+                .TopLeftCards {
+                    padding: 7px 25px;  
+                    margin: 7px;
+                    font-size: 16px; 
+                }
+            }   
+        }
+    }
+    
+    .sectionTitle {
+        font-size: 20px; 
+    }
+
+    .titleDescription {
+        font-size: 12px;  
+        margin: 10px 0;  
+    }
+
+    .About {
+        padding-top: 20px;
+        
+        .AboutItems {
+            .card {
+                width: $full-width;  
+                padding: 5px; 
+
+                .name {
+                    font-size: 16px;
+                }
+
+                .career {
+                    font-size: 12px;
+                }
+
+                .description {
+                    font-size: 11px;
+                }
+                
+                .AboutBtn {
+                    font-size: 12px; 
+                    padding-top: 8px; 
+                    padding-bottom: 8px;
+                    
+                }
+            }
+        } 
+    }
+
+    .contact {
+        .SendButton {
+            width: fit-content;
+        }
+    }
+}
