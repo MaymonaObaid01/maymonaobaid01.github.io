@@ -7,13 +7,9 @@ a {
   text-decoration: none;
 }
 
-.container {
-  margin-left: 40px;
-}
-
 .header {
   height: 500px;
-  background-image: url("assets/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,6 +27,7 @@ a {
 }
 
 .logoName {
+  margin-left: 40px;
   color:gray;
   font-size: 26px;
   letter-spacing: 3px;  
@@ -56,7 +53,7 @@ a {
   cursor: pointer;
 }
 
-.TextOverImage {
+.textOverImage {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -90,6 +87,10 @@ a {
 }
 
 /* projects */
+.projects {
+  margin-left: 40px;
+}
+
 .projects .title {
   padding-top: 80px; 
 }
@@ -103,29 +104,30 @@ a {
   position: relative;
   width: 22%; 
   padding: 0px 20px 10px 0px;
-  color: white;
 }
 
 .projects img {
   width: 100%;
 }
 
-.TopLeftCards {
+.topLeftCards {
   position: absolute;
   top: 0px;
   left: 0px;
   padding: 10px 13px 5px 13px; 
   margin: 0; 
+  color: white;
   background-color:black;
   font-size: 20px;
 }
  
 /* About section*/
-.About {
+.about {
   padding-top: 60px;
+  margin-left: 40px;
 }
 
-.AboutItems {
+.aboutItems {
   display: flex;
   flex-wrap: wrap;
 }
@@ -157,7 +159,7 @@ img {
   font-size: 12px;
 }
 
-.AboutBtn {
+.aboutBtn {
   width: 100%;
   padding: 6px 0px;
   border: none;
@@ -172,6 +174,7 @@ img {
 /* contact section */ 
 .contact {
   margin-top: 30px;
+  margin-left: 40px;
 }
 
 .box {
@@ -206,7 +209,6 @@ img {
 
   .header .navlist { 
     margin-right: 20px;   
-    width: 60%;
     text-align: right;
   }
 
@@ -220,11 +222,9 @@ img {
     letter-spacing: 1px;
   }
 
-  .TextOverImage {
+  .textOverImage {
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   /* projects */
@@ -240,13 +240,13 @@ img {
     padding-bottom: 5px;
   }
 
-  .TopLeftCards {
+  .topLeftCards {
     padding: 5px 8px;  
     font-size: 18px;
   }
 
   /* About section */
-  .About {
+  .about {
     padding-top: 40px;
   }
 
@@ -277,7 +277,7 @@ img {
     font-size: 10px;
   }
 
-  .AboutBtn {
+  .aboutBtn {
     font-size: 13px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -295,10 +295,10 @@ img {
     display: none;
   }
 
-  .Architects {
+  .architects {
     display: none;
   }
-  .TextOverImage {
+  .textOverImage {
     font-size: 40px;  
     top: 35%;
   }
@@ -320,14 +320,14 @@ img {
     margin: 7px 0;  
   }
 
-  .CardNames {
+  .topLeftCards {
     padding: 7px 25px;  
     margin: 7px;
     font-size: 16px; 
   }
 
   /* About section */
-  .About {
+  .about {
     padding-top: 30px; 
   }
 
@@ -340,7 +340,7 @@ img {
     margin: 10px 0;  
   }
 
-  .About .card {
+  .about .card {
     width: 100%;  
     padding: 5px;  
   }
@@ -357,7 +357,7 @@ img {
     font-size: 11px; 
   }
 
- .AboutBtn {
+ .aboutBtn {
     font-size: 12px; 
     padding-top: 8px; 
     padding-bottom: 8px;  

@@ -4,13 +4,11 @@
   "description": "��#\u0000 \u0000m\u0000y\u0000-\u0000f\u0000i\u0000r\u0000s\u0000t\u0000-\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "hi"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0",
+  "dependencies": {
     "sass": "^1.66.1"
   }
 }

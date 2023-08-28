@@ -23,7 +23,7 @@ body {
 //header
 .header {
     height: 500px;
-    background-image: url("assets/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ body {
         }
     }    
 
-    .TextOverImage {
+    .textOverImage {
         position: absolute;
         top: 35%;
         left: 50%;
@@ -117,7 +117,7 @@ body {
                 width: $full-width;    
             }
 
-            .TopLeftCards {
+            .topLeftCards {
                 position: absolute;
                 top: 0px;
                 left: 0px;
@@ -132,10 +132,10 @@ body {
 }
 
 // About Section
-.About {
+.about {
     padding: 40px;
 
-    .AboutItems {
+    .aboutItems {
         display: flex;
         flex-wrap: wrap;
 
@@ -164,7 +164,7 @@ body {
                 font-size: 12px;
             }
 
-            .AboutBtn {
+            .aboutBtn {
                 width: $full-width;
                 padding: $buttons-padding;
                 border: none;
@@ -192,7 +192,7 @@ body {
         margin-bottom: 20px;
     }
      
-    .SendButton {
+    .sendButton {
         width: $cards-width;
         padding: $buttons-padding;
         border: none;
@@ -227,7 +227,7 @@ body {
             }
         }
 
-        .TextOverImage {
+        .textOverImage {
             position: absolute;
             top: 40%;
         }
@@ -251,7 +251,7 @@ body {
                 padding-right: 10px;
                 padding-bottom: 5px;
                 
-                .TopLeftCards {
+                .topLeftCards {
                     padding: 5px 8px;  
                     font-size: 18px;
                 }
@@ -259,10 +259,8 @@ body {
         }
     }
 
-    .About {
-        padding-top: 40px;
-
-        .AboutItems {
+    .about {
+        .aboutItems {
             .card {
                 width: 47%;  
                 padding-right: 10px;
@@ -280,7 +278,7 @@ body {
                     font-size: 10px;
                 }
                 
-                .AboutBtn {
+                .aboutBtn {
                     font-size: 13px;
                     padding-top: 7px;
                     padding-bottom: 7px;
@@ -299,11 +297,11 @@ body {
             }
         }
 
-        .Architects {
+        .architects {
             display: none;
         }
 
-        .TextOverImage {
+        .textOverImage {
             font-size: 40px;  
             top: 35%;
 
@@ -320,7 +318,7 @@ body {
                 padding: 7px;   
                 margin: 7px 0;  
         
-                .TopLeftCards {
+                .topLeftCards {
                     padding: 7px 25px;  
                     margin: 7px;
                     font-size: 16px; 
@@ -338,10 +336,10 @@ body {
         margin: 10px 0;  
     }
 
-    .About {
+    .about {
         padding-top: 20px;
         
-        .AboutItems {
+        .aboutItems {
             .card {
                 width: $full-width;  
                 padding: 5px; 
@@ -355,10 +353,10 @@ body {
                 }
 
                 .description {
-                    font-size: 11px;
+                    font-size: 12px;
                 }
                 
-                .AboutBtn {
+                .aboutBtn {
                     font-size: 12px; 
                     padding-top: 8px; 
                     padding-bottom: 8px;
@@ -369,7 +367,7 @@ body {
     }
 
     .contact {
-        .SendButton {
+        .sendButton {
             width: fit-content;
         }
     }
