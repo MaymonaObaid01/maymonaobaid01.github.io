@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <!-- <link rel="stylesheet" href="assets/styles/index.css"> -->
+    <link rel="stylesheet" href="assets/styles/index.css">
     <title>BR Architects</title>
 </head>
 <body>
     <!-- start of header section -->
     <div class="header">        
-        <div class="fixedMenu">
-            <span class="logoName">
-                <span class="boldChar">BR</span> Architects
+        <div class="header__fixedMenu">
+            <span class="fixedMenu__logo">
+                <span class="fixedMenu__logo--bold">BR</span> Architects
             </span> 
-            <span class="navlist">               
+            <span class="header__fixedMenu__navlist">               
                 <a href="#goToProjects">Projects</a>
                 <a href="#goToAbout">About</a>
                 <a href="#goToContact">Contact</a>  
             </span>                
         </div>            
-            <p class="textOverImage"><span class="shadedWord">BR</span> <span class="architects">Architects</span></p>
+        <p class="header__textOverImage">
+            <span class="header__textOverImage--shadedWord">BR</span> <span class="header__textOverImage--architects">Architects</span>
+        </p>
     </div>
     <!-- End of header section -->
     <!-- first of projects section -->     
     <div class="projects" 
-            id="goToProjects">        
+         id="goToProjects">        
         <div class="title">
             <p class="sectionTitle">Projects</p>                
         </div>
@@ -37,37 +38,37 @@
             </div>
             <div class="card">
                 <img src="assets/img/2.jpg" 
-                        alt="Brinck House"> 
+                     alt="Brinck House"> 
                 <p class="topLeftCards">Brinck House</p>                  
             </div> 
             <div class="card">
                 <img src="assets/img/3.jpg" 
-                        alt="Renovated"> 
+                     alt="Renovated"> 
                 <p class="topLeftCards">Renovated</p>                  
             </div> 
             <div class="card">
                 <img src="assets/img/4.jpg" 
-                        alt="Barn House"> 
+                     alt="Barn House"> 
                 <p class="topLeftCards">Barn House</p>                
             </div> 
             <div class="card">
                 <img src="assets/img/2.jpg" 
-                        alt="Summer House"> 
+                     alt="Summer House"> 
                 <p class="topLeftCards">Summer House</p>                
             </div>
             <div class="card">
                 <img src="assets/img/1.jpg" 
-                        alt="Brinck House"> 
+                     alt="Brinck House"> 
                 <p class="topLeftCards">Brinck House</p>                  
             </div> 
             <div class="card">
                 <img src="assets/img/4.jpg" 
-                        alt="Renovated">
+                     alt="Renovated">
                 <p class="topLeftCards">Renovated</p>                   
             </div> 
             <div class="card">
                 <img src="assets/img/3.jpg" 
-                        alt="Barn House"> 
+                     alt="Barn House"> 
                 <p class="topLeftCards">Barn House</p>                  
             </div>             
         </div>
@@ -75,7 +76,7 @@
     <!-- end of projects section -->
     <!-- About Section -->
     <div class="about" 
-            id="goToAbout">
+         id="goToAbout">
         <div class="title">
             <p class="sectionTitle">About</p>  
             <p class="titleDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam velit soluta hic voluptatum impedit, minus iste, necessitatibus molestiae quibusdam ducimus culpa non ad dolore dicta repellat, repudiandae eligendi? Ex explicabo perferendis quae soluta voluptates sint, beatae culpa excepturi quidem pariatur libero mollitia quos, quia voluptatum maxime esse? Consectetur, fugit porro. Nulla, omnis officia? Voluptas, quia obcaecati modi animi sunt fugiat quisquam atque! Earum modi quaerat nostrum asperiores ea omnis fugit sit eaque minima impedit placeat, quod consequatur fuga rerum, excepturi quisquam amet nihil ex ratione, Corporis, labore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -83,7 +84,7 @@
         <div class="aboutItems">
             <div class="card">                   
                 <img src="assets/img/8.jpg" 
-                        alt="john Doe pictyre">                              
+                     alt="john Doe pictyre">                              
                 <p class="name">John Doe</h3>
                 <p class="career">CEO & Founder</h4>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, alias.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, reprehenderit.</p>
@@ -92,7 +93,7 @@
             </div>
             <div class="card">                                           
                 <img src="assets/img/8.jpg" 
-                        alt="john Doe pictyre"> 
+                     alt="john Doe pictyre"> 
                 <p class="name">Jane Doe</p>
                 <p class="career">Architect</p>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, reprehenderit.</p>
@@ -101,7 +102,7 @@
             </div>
             <div class="card">
                 <img src="assets/img/john.jpg" 
-                        alt="Mike Ross pictyre"> 
+                     alt="Mike Ross pictyre"> 
                 <p class="name">Mike Ross</p>
                 <p class="career">Architect</p>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, reprehenderit.</p>
@@ -110,7 +111,7 @@
             </div>
             <div class="card">
                 <img src="assets/img/john.jpg" 
-                        alt="Dan Star">
+                     alt="Dan Star">
                 <p class="name">Dan Star</p>
                 <p class="career">Architect</p>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, reprehenderit.</p>
@@ -129,17 +130,17 @@
         </div>
         <div class="form">
             <input class="box" 
-                    type="text" 
-                    placeholder="Name"/>
+                   type="text" 
+                   placeholder="Name"/>
             <input class="box" 
-                    type="text" 
-                    placeholder="Email"/>
+                   type="text" 
+                   placeholder="Email"/>
             <input class="box" 
-                    type="text" 
-                    placeholder="Subject"/>
+                   type="text" 
+                   placeholder="Subject"/>
             <input class="box" 
-                    type="text" 
-                    placeholder="Comment"/>
+                   type="text" 
+                   placeholder="Comment"/>
             <button class="sendButton" 
                     href="#">send message</button>
         </div>
