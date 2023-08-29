@@ -5,14 +5,12 @@ $paragraphs-color: rgb(22, 21, 21);
 
 // width
 $full-width:100%;
-$cards-width: 22%;
 
 // margins and paddings
 $cards-padding: 0px 20px 10px 0px;
 $buttons-padding: 10px 0;
 
 // font
-$title-font: 'Rubik', sans-serif;
 $title-description-font: 'Arial', sans-serif;
 
 body {
@@ -27,7 +25,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: $title-font;
 
     &__fixedMenu {
         position: fixed; 
@@ -49,8 +46,8 @@ body {
                 font-weight: bold;
             }
         }
-        
-        &__navlist {
+
+        .fixedMenu__navlist {
             float: right;
             padding-top: 7px;
             margin-right: 15px;
@@ -85,38 +82,29 @@ body {
     }
 }
 
-//  main titles 
-.sectionTitle {
-    color: $title-color;
-    font-family: $title-font;
-    font-size: 25px;
-}
-
-.titleDescription { 
-    color: $paragraphs-color;
-    font-family: $title-description-font;
-    font-size: 15px;
-    line-height: 1.6;
-}
-
 // project section
 .projects {
     padding: 40px;
-   
-    .projectsItems {
+
+    &__sectionTitle {
+        color: $title-color;
+        font-size: 25px;
+    }
+
+    &__projectsItems {
         display: flex;
         flex-wrap: wrap;
 
-        .card {
+        .projectsItems__card {
             position: relative;
-            width: $cards-width; 
+            width: 22%; 
             padding: $cards-padding;
 
             img {
                 width: $full-width;    
             }
 
-            .topLeftCards {
+            &--topLeftCards {
                 position: absolute;
                 top: 0px;
                 left: 0px;
@@ -134,36 +122,47 @@ body {
 .about {
     padding: 40px;
 
-    .aboutItems {
+    &__sectionTitle {
+        color: $title-color;
+        font-size: 25px;    
+    }
+
+    &__titleDescription {
+        color: $paragraphs-color;
+        font-family: $title-description-font;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    &__aboutItems {
         display: flex;
         flex-wrap: wrap;
 
-        .card {
-            width: $cards-width;
+        .aboutItems__card {
+            width: 22%;
             padding: $cards-padding;
-            font-family: $title-font;
 
             img {
                 width: $full-width;
             }
 
-            .name {
+            &--name {
                 font-size: 20px;
                 font-weight: bold;
             }
         
-            .career {
+            &--career {
                 margin-top: 15px;
                 color: $title-color;
             }
         
-            .description {
+            &--description {
                 margin-top: 15px;
                 color: $paragraphs-color;
                 font-size: 12px;
             }
 
-            .aboutBtn {
+            &--aboutBtn {
                 width: $full-width;
                 padding: $buttons-padding;
                 border: none;
@@ -181,36 +180,56 @@ body {
 .contact {
     padding: 40px;    
 
-    .box {
-        display: inline-block;
-        box-sizing: border-box;
-        width: $full-width;
-        height: 30px;
-        padding: 5px;
-        border: 1px solid rgb(170, 168, 168);
-        margin-bottom: 20px;
-    }
-     
-    .sendButton {
-        width: $cards-width;
-        padding: $buttons-padding;
-        border: none;
-        margin: 15px 0px;
-        color: white;
-        font-size: 12px;
-        font-weight: bold;   
-        background-color:$paragraphs-color; 
-        text-transform: uppercase;
-        cursor: pointer; 
+    &__sectionTitle {
+        color: $title-color;
+        font-size: 25px;    
     }
 
+    &__titleDescription {
+        color: $paragraphs-color;
+        font-family: $title-description-font;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    &__form {
+        margin-top: 10px;
+    
+        &--box {
+            display: inline-block;
+            box-sizing: border-box;
+            width: $full-width;
+            height: 30px;
+            padding: 5px;
+            border: 1px solid rgb(170, 168, 168);
+            margin-bottom: 20px;
+        }
+        
+        &--sendButton {
+            width: 22%;
+            padding: $buttons-padding;
+            border: none;
+            margin: 15px 0px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;   
+            background-color:$paragraphs-color; 
+            text-transform: uppercase;
+            cursor: pointer; 
+        }
+    }
 }
 
 //media query for ipads 
 @media (min-width: 576px) and (max-width: 900px){
     .header {
-        .fixedMenu {
-            .navlist { 
+        &__fixedMenu {
+            .fixedMenu__logo {
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+
+            .fixedMenu__navlist { 
                 margin-right: 20px;   
                 text-align: right;
                
@@ -219,38 +238,28 @@ body {
                     padding-right: 30px;
                 }
             }
-
-            .logoName {
-                font-size: 20px;
-                letter-spacing: 1px;
-            }
         }
 
-        .textOverImage {
+        &__textOverImage {
             position: absolute;
             top: 40%;
         }
     }
         
-    .sectionTitle {
-        padding-top: 60px;
-        margin-bottom: 30px; 
-        font-size: 22px;
-    }
-
-    .titleDescription {
-        font-size: 14px;
-        margin: 15px 5px 25px 5px;
-    }
-
     .projects {
-        .projectsItems {
-            .card { 
+        &__sectionTitle {
+            padding-top: 60px;
+            margin-bottom: 30px; 
+            font-size: 22px;
+        }
+
+        &__projectsItems {
+            .projectsItems__card { 
                 width: 46%;  
                 padding-right: 10px;
                 padding-bottom: 5px;
                 
-                .topLeftCards {
+                &--topLeftCards {
                     padding: 5px 8px;  
                     font-size: 18px;
                 }
@@ -259,25 +268,36 @@ body {
     }
 
     .about {
-        .aboutItems {
-            .card {
+        &__sectionTitle {
+            padding-top: 60px;
+            margin-bottom: 30px; 
+            font-size: 22px;   
+        }
+    
+        &__titleDescription {
+            font-size: 14px;
+            margin: 15px 5px 25px 5px;
+        }
+
+        &__aboutItems {
+            .aboutItems__card {
                 width: 47%;  
                 padding-right: 10px;
                 padding-bottom: 5px;
             
-                .name {
+                &--name {
                     font-size: 18px;
                 }
 
-                .career {
+                &--career {
                     font-size: 14px;
                 }
 
-                .description {
+                &--description {
                     font-size: 10px;
                 }
                 
-                .aboutBtn {
+                &--aboutBtn {
                     font-size: 13px;
                     padding-top: 7px;
                     padding-bottom: 7px;
@@ -290,34 +310,43 @@ body {
 //phones screen 
 @media (max-width: 576px) {
     .header {
-        .fixedMenu {
-            .navlist { 
+        &__fixedMenu {
+            .fixedMenu__navlist { 
                 display: none;
             }
-        }
-
-        .architects {
-            display: none;
         }
 
         .textOverImage {
             font-size: 40px;  
             top: 35%;
+            
+            &--architects {
+                display: none;
+            }
 
-            .shadedWord {
+            &--shadedWord {
                 padding: 20px;
             }
         }        
     }
 
     .projects {
-        .projectsItems {
-            .card { 
+        &__sectionTitle {
+            font-size: 20px; 
+        }
+    
+        &__titleDescription {
+            font-size: 12px;  
+            margin: 10px 0;  
+        }
+
+        &__projectsItems {
+            .projectsItems__card { 
                 width: $full-width;
                 padding: 7px;   
                 margin: 7px 0;  
         
-                .topLeftCards {
+                &--topLeftCards {
                     padding: 7px 25px;  
                     margin: 7px;
                     font-size: 16px; 
@@ -326,48 +355,49 @@ body {
         }
     }
     
-    .sectionTitle {
-        font-size: 20px; 
-    }
-
-    .titleDescription {
-        font-size: 12px;  
-        margin: 10px 0;  
-    }
-
     .about {
         padding-top: 20px;
+
+        &__sectionTitle {
+            font-size: 20px; 
+        }
+    
+        &__titleDescription {
+            font-size: 12px;  
+            margin: 10px 0;  
+        }
         
-        .aboutItems {
-            .card {
+        &__aboutItems {
+            .aboutItems__card {
                 width: $full-width;  
                 padding: 5px; 
 
-                .name {
+                &--name {
                     font-size: 16px;
                 }
 
-                .career {
+                &--career {
                     font-size: 12px;
                 }
 
-                .description {
+                &--description {
                     font-size: 12px;
                 }
                 
-                .aboutBtn {
+                &--aboutBtn {
                     font-size: 12px; 
                     padding-top: 8px; 
-                    padding-bottom: 8px;
-                    
+                    padding-bottom: 8px;  
                 }
             }
         } 
     }
 
     .contact {
-        .sendButton {
-            width: fit-content;
+        &__form {
+            &--sendButton {
+                width: fit-content;
+            }
         }
     }
 }

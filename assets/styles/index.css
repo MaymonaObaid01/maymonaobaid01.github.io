@@ -9,7 +9,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: "Rubik", sans-serif;
 }
 .header__fixedMenu {
   position: fixed;
@@ -30,13 +29,13 @@ body {
   color: rgb(22, 21, 21);
   font-weight: bold;
 }
-.header__fixedMenu__navlist {
+.header__fixedMenu .fixedMenu__navlist {
   float: right;
   padding-top: 7px;
   margin-right: 15px;
   text-align: center;
 }
-.header__fixedMenu__navlist a {
+.header__fixedMenu .fixedMenu__navlist a {
   padding-right: 50px;
   color: rgb(22, 21, 21);
   font-size: 15px;
@@ -60,35 +59,26 @@ body {
   background-clip: border-box;
 }
 
-.sectionTitle {
-  color: #6c757d;
-  font-family: "Rubik", sans-serif;
-  font-size: 25px;
-}
-
-.titleDescription {
-  color: rgb(22, 21, 21);
-  font-family: "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
 .projects {
   padding: 40px;
 }
-.projects .projectsItems {
+.projects__sectionTitle {
+  color: #6c757d;
+  font-size: 25px;
+}
+.projects__projectsItems {
   display: flex;
   flex-wrap: wrap;
 }
-.projects .projectsItems .card {
+.projects__projectsItems .projectsItems__card {
   position: relative;
   width: 22%;
   padding: 0px 20px 10px 0px;
 }
-.projects .projectsItems .card img {
+.projects__projectsItems .projectsItems__card img {
   width: 100%;
 }
-.projects .projectsItems .card .topLeftCards {
+.projects__projectsItems .projectsItems__card--topLeftCards {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -102,32 +92,41 @@ body {
 .about {
   padding: 40px;
 }
-.about .aboutItems {
+.about__sectionTitle {
+  color: #6c757d;
+  font-size: 25px;
+}
+.about__titleDescription {
+  color: rgb(22, 21, 21);
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.about__aboutItems {
   display: flex;
   flex-wrap: wrap;
 }
-.about .aboutItems .card {
+.about__aboutItems .aboutItems__card {
   width: 22%;
   padding: 0px 20px 10px 0px;
-  font-family: "Rubik", sans-serif;
 }
-.about .aboutItems .card img {
+.about__aboutItems .aboutItems__card img {
   width: 100%;
 }
-.about .aboutItems .card .name {
+.about__aboutItems .aboutItems__card--name {
   font-size: 20px;
   font-weight: bold;
 }
-.about .aboutItems .card .career {
+.about__aboutItems .aboutItems__card--career {
   margin-top: 15px;
   color: #6c757d;
 }
-.about .aboutItems .card .description {
+.about__aboutItems .aboutItems__card--description {
   margin-top: 15px;
   color: rgb(22, 21, 21);
   font-size: 12px;
 }
-.about .aboutItems .card .aboutBtn {
+.about__aboutItems .aboutItems__card--aboutBtn {
   width: 100%;
   padding: 10px 0;
   border: none;
@@ -141,7 +140,20 @@ body {
 .contact {
   padding: 40px;
 }
-.contact .box {
+.contact__sectionTitle {
+  color: #6c757d;
+  font-size: 25px;
+}
+.contact__titleDescription {
+  color: rgb(22, 21, 21);
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.contact__form {
+  margin-top: 10px;
+}
+.contact__form--box {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
@@ -150,7 +162,7 @@ body {
   border: 1px solid rgb(170, 168, 168);
   margin-bottom: 20px;
 }
-.contact .sendButton {
+.contact__form--sendButton {
   width: 22%;
   padding: 10px 0;
   border: none;
@@ -164,113 +176,125 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 900px) {
-  .header .fixedMenu .navlist {
-    margin-right: 20px;
-    text-align: right;
-  }
-  .header .fixedMenu .navlist a {
-    font-size: 15px;
-    padding-right: 30px;
-  }
-  .header .fixedMenu .logoName {
+  .header__fixedMenu .fixedMenu__logo {
     font-size: 20px;
     letter-spacing: 1px;
   }
-  .header .textOverImage {
+  .header__fixedMenu .fixedMenu__navlist {
+    margin-right: 20px;
+    text-align: right;
+  }
+  .header__fixedMenu .fixedMenu__navlist a {
+    font-size: 15px;
+    padding-right: 30px;
+  }
+  .header__textOverImage {
     position: absolute;
     top: 40%;
   }
-  .sectionTitle {
+  .projects__sectionTitle {
     padding-top: 60px;
     margin-bottom: 30px;
     font-size: 22px;
   }
-  .titleDescription {
-    font-size: 14px;
-    margin: 15px 5px 25px 5px;
-  }
-  .projects .projectsItems .card {
+  .projects__projectsItems .projectsItems__card {
     width: 46%;
     padding-right: 10px;
     padding-bottom: 5px;
   }
-  .projects .projectsItems .card .topLeftCards {
+  .projects__projectsItems .projectsItems__card--topLeftCards {
     padding: 5px 8px;
     font-size: 18px;
   }
-  .about .aboutItems .card {
+  .about__sectionTitle {
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  .about__titleDescription {
+    font-size: 14px;
+    margin: 15px 5px 25px 5px;
+  }
+  .about__aboutItems .aboutItems__card {
     width: 47%;
     padding-right: 10px;
     padding-bottom: 5px;
   }
-  .about .aboutItems .card .name {
+  .about__aboutItems .aboutItems__card--name {
     font-size: 18px;
   }
-  .about .aboutItems .card .career {
+  .about__aboutItems .aboutItems__card--career {
     font-size: 14px;
   }
-  .about .aboutItems .card .description {
+  .about__aboutItems .aboutItems__card--description {
     font-size: 10px;
   }
-  .about .aboutItems .card .aboutBtn {
+  .about__aboutItems .aboutItems__card--aboutBtn {
     font-size: 13px;
     padding-top: 7px;
     padding-bottom: 7px;
   }
 }
 @media (max-width: 576px) {
-  .header .fixedMenu .navlist {
-    display: none;
-  }
-  .header .architects {
+  .header__fixedMenu .fixedMenu__navlist {
     display: none;
   }
   .header .textOverImage {
     font-size: 40px;
     top: 35%;
   }
-  .header .textOverImage .shadedWord {
+  .header .textOverImage--architects {
+    display: none;
+  }
+  .header .textOverImage--shadedWord {
     padding: 20px;
   }
-  .projects .projectsItems .card {
+  .projects__sectionTitle {
+    font-size: 20px;
+  }
+  .projects__titleDescription {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .projects__projectsItems .projectsItems__card {
     width: 100%;
     padding: 7px;
     margin: 7px 0;
   }
-  .projects .projectsItems .card .topLeftCards {
+  .projects__projectsItems .projectsItems__card--topLeftCards {
     padding: 7px 25px;
     margin: 7px;
     font-size: 16px;
   }
-  .sectionTitle {
-    font-size: 20px;
-  }
-  .titleDescription {
-    font-size: 12px;
-    margin: 10px 0;
-  }
   .about {
     padding-top: 20px;
   }
-  .about .aboutItems .card {
+  .about__sectionTitle {
+    font-size: 20px;
+  }
+  .about__titleDescription {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .about__aboutItems .aboutItems__card {
     width: 100%;
     padding: 5px;
   }
-  .about .aboutItems .card .name {
+  .about__aboutItems .aboutItems__card--name {
     font-size: 16px;
   }
-  .about .aboutItems .card .career {
+  .about__aboutItems .aboutItems__card--career {
     font-size: 12px;
   }
-  .about .aboutItems .card .description {
+  .about__aboutItems .aboutItems__card--description {
     font-size: 12px;
   }
-  .about .aboutItems .card .aboutBtn {
+  .about__aboutItems .aboutItems__card--aboutBtn {
     font-size: 12px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .contact .sendButton {
+  .contact__form--sendButton {
     width: -moz-fit-content;
     width: fit-content;
   }
