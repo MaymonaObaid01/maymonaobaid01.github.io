@@ -1,0 +1,396 @@
+//Variables
+$title-color: #6c757d;
+$paragraphs-color: rgb(22, 21, 21);
+$full-width: 100%;
+$cards-padding: 0px 20px 10px 0px;
+$buttons-padding: 10px 0;
+$title-description-font: 'Arial', sans-serif;
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+//header
+.header {
+    height: 500px;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__fixedMenu {
+        position: fixed; 
+        top: 0;
+        right: 0;
+        z-index: 1;
+        box-shadow: 2px 2px $title-color;
+        width: $full-width;
+        background-color: white;
+    
+        .fixedMenu__logo {
+            padding: 40px;
+            color: $title-color;
+            font-size: 25px;
+            letter-spacing: 4px;
+    
+            &--bold {
+                color: $paragraphs-color;
+                font-weight: bold;
+            }
+        }
+
+        .fixedMenu__navlist {
+            float: right;
+            padding-top: 7px;
+            margin-right: 15px;
+            text-align: center;
+
+            a {
+                padding-right: 50px;
+                color: $paragraphs-color;
+                font-size: 15px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__textOverImage {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 25px;
+        letter-spacing: 5px;
+        font-weight: bold;
+        text-align: center;
+
+        &--shadedWord {
+            padding: 5px;
+            background-color: rgba(47, 50, 50, 0.5);
+            background-clip: border-box;
+        }
+    }
+}
+
+// project section
+.projects {
+    padding: 40px;
+
+    &__sectionTitle {
+        color: $title-color;
+        font-size: 25px;
+    }
+
+    &__projectsItems {
+        display: flex;
+        flex-wrap: wrap;
+
+        .projectsItems__card {
+            position: relative;
+            width: 22%; 
+            padding: $cards-padding;
+
+            img {
+                width: $full-width;    
+            }
+
+            &--address {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                padding: 10px 13px 5px 13px; 
+                margin: 0; 
+                color: white;
+                background-color: $paragraphs-color;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// About Section
+.about {
+    padding: 40px;
+
+    &__sectionTitle {
+        color: $title-color;
+        font-size: 25px;    
+    }
+
+    &__titleDescription {
+        color: $paragraphs-color;
+        font-family: $title-description-font;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    &__aboutItems {
+        display: flex;
+        flex-wrap: wrap;
+
+        .aboutItems__card {
+            width: 22%;
+            padding: $cards-padding;
+
+            img {
+                width: $full-width;
+            }
+
+            &__name {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        
+            &__career {
+                margin-top: 15px;
+                color: $title-color;
+            }
+        
+            &__description {
+                margin-top: 15px;
+                color: $paragraphs-color;
+                font-size: 12px;
+            }
+
+            &__aboutBtn {
+                width: $full-width;
+                padding: $buttons-padding;
+                border: none;
+                color: $paragraphs-color;
+                font-size: 12px;
+                font-weight: 600;
+                background-color: rgb(230, 223, 223);
+                cursor: pointer;
+            }
+        }
+    } 
+}
+
+// contact section
+.contact {
+    padding: 40px;    
+
+    &__sectionTitle {
+        color: $title-color;
+        font-size: 25px;    
+    }
+
+    &__titleDescription {
+        color: $paragraphs-color;
+        font-family: $title-description-font;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    &__form {
+        margin-top: 10px;
+    
+        &--box {
+            display: inline-block;
+            box-sizing: border-box;
+            width: $full-width;
+            height: 30px;
+            padding: 5px;
+            border: 1px solid rgb(170, 168, 168);
+            margin-bottom: 20px;
+        }
+        
+        &--sendButton {
+            width: 22%;
+            padding: $buttons-padding;
+            border: none;
+            margin: 15px 0px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;   
+            background-color:$paragraphs-color; 
+            text-transform: uppercase;
+            cursor: pointer; 
+        }
+    }
+}
+
+//media query for ipads 
+@media (min-width: 576px) and (max-width: 900px){
+    .header {
+        &__fixedMenu {
+            .fixedMenu__logo {
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+
+            .fixedMenu__navlist { 
+                margin-right: 20px;   
+                text-align: right;
+               
+                a {
+                    font-size: 15px;
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        &__textOverImage {
+            position: absolute;
+            top: 40%;
+        }
+    }
+        
+    .projects {
+        &__sectionTitle {
+            padding-top: 60px;
+            margin-bottom: 30px; 
+            font-size: 22px;
+        }
+
+        &__projectsItems {
+            .projectsItems__card { 
+                width: 46%;  
+                padding-right: 10px;
+                padding-bottom: 5px;
+                
+                &--address {
+                    padding: 5px 8px;  
+                    font-size: 18px;
+                }
+            }   
+        }
+    }
+
+    .about {
+        &__sectionTitle {
+            padding-top: 60px;
+            margin-bottom: 30px; 
+            font-size: 22px;   
+        }
+    
+        &__titleDescription {
+            font-size: 14px;
+            margin: 15px 5px 25px 5px;
+        }
+
+        &__aboutItems {
+            .aboutItems__card {
+                width: 47%;  
+                padding-right: 10px;
+                padding-bottom: 5px;
+            
+                &__name {
+                    font-size: 18px;
+                }
+
+                &__career {
+                    font-size: 14px;
+                }
+
+                &__description {
+                    font-size: 10px;
+                }
+                
+                &__aboutBtn {
+                    font-size: 13px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                }
+            }
+        } 
+    }
+}
+
+//phones screen 
+@media (max-width: 576px) {
+    .header {
+        &__fixedMenu {
+            .fixedMenu__navlist { 
+                display: none;
+            }
+        }
+
+        .textOverImage {
+            font-size: 40px;  
+            top: 35%;
+            
+            &--architects {
+                display: none;
+            }
+
+            &--shadedWord {
+                padding: 20px;
+            }
+        }        
+    }
+
+    .projects {
+        &__sectionTitle {
+            font-size: 20px; 
+        }
+    
+        &__titleDescription {
+            font-size: 12px;  
+            margin: 10px 0;  
+        }
+
+        &__projectsItems {
+            .projectsItems__card { 
+                width: $full-width;
+                padding: 7px;   
+                margin: 7px 0;  
+        
+                &--address {
+                    padding: 7px 25px;  
+                    margin: 7px;
+                    font-size: 16px; 
+                }
+            }   
+        }
+    }
+    
+    .about {
+        padding-top: 20px;
+
+        &__sectionTitle {
+            font-size: 20px; 
+        }
+    
+        &__titleDescription {
+            font-size: 12px;  
+            margin: 10px 0;  
+        }
+        
+        &__aboutItems {
+            .aboutItems__card {
+                width: $full-width;  
+                padding: 5px; 
+
+                &__name {
+                    font-size: 16px;
+                }
+
+                &__career {
+                    font-size: 12px;
+                }
+
+                &__description {
+                    font-size: 12px;
+                }
+                
+                &__aboutBtn {
+                    font-size: 12px; 
+                    padding-top: 8px; 
+                    padding-bottom: 8px;  
+                }
+            }
+        } 
+    }
+
+    .contact {
+        &__form {
+            &--sendButton {
+                width: fit-content;
+            }
+        }
+    }
+}
