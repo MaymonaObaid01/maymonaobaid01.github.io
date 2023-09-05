@@ -1,16 +1,9 @@
 //Variables
-// colors theme 
 $title-color: #6c757d;
 $paragraphs-color: rgb(22, 21, 21);
-
-// width
-$full-width:100%;
-
-// margins and paddings
+$full-width: 100%;
 $cards-padding: 0px 20px 10px 0px;
 $buttons-padding: 10px 0;
-
-// font
 $title-description-font: 'Arial', sans-serif;
 
 body {
@@ -104,7 +97,7 @@ body {
                 width: $full-width;    
             }
 
-            &--topLeftCards {
+            &--address {
                 position: absolute;
                 top: 0px;
                 left: 0px;
@@ -146,23 +139,23 @@ body {
                 width: $full-width;
             }
 
-            &--name {
+            &__name {
                 font-size: 20px;
                 font-weight: bold;
             }
         
-            &--career {
+            &__career {
                 margin-top: 15px;
                 color: $title-color;
             }
         
-            &--description {
+            &__description {
                 margin-top: 15px;
                 color: $paragraphs-color;
                 font-size: 12px;
             }
 
-            &--aboutBtn {
+            &__aboutBtn {
                 width: $full-width;
                 padding: $buttons-padding;
                 border: none;
@@ -259,7 +252,7 @@ body {
                 padding-right: 10px;
                 padding-bottom: 5px;
                 
-                &--topLeftCards {
+                &--address {
                     padding: 5px 8px;  
                     font-size: 18px;
                 }
@@ -285,19 +278,19 @@ body {
                 padding-right: 10px;
                 padding-bottom: 5px;
             
-                &--name {
+                &__name {
                     font-size: 18px;
                 }
 
-                &--career {
+                &__career {
                     font-size: 14px;
                 }
 
-                &--description {
+                &__description {
                     font-size: 10px;
                 }
                 
-                &--aboutBtn {
+                &__aboutBtn {
                     font-size: 13px;
                     padding-top: 7px;
                     padding-bottom: 7px;
@@ -346,7 +339,7 @@ body {
                 padding: 7px;   
                 margin: 7px 0;  
         
-                &--topLeftCards {
+                &--address {
                     padding: 7px 25px;  
                     margin: 7px;
                     font-size: 16px; 
@@ -372,19 +365,19 @@ body {
                 width: $full-width;  
                 padding: 5px; 
 
-                &--name {
+                &__name {
                     font-size: 16px;
                 }
 
-                &--career {
+                &__career {
                     font-size: 12px;
                 }
 
-                &--description {
+                &__description {
                     font-size: 12px;
                 }
                 
-                &--aboutBtn {
+                &__aboutBtn {
                     font-size: 12px; 
                     padding-top: 8px; 
                     padding-bottom: 8px;  
